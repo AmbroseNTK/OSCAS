@@ -7,33 +7,42 @@
     <title>Operating System Concepts Algorithm Simulator</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
 
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md" style="background: linear-gradient(90deg, #0072ff, #00c6ff);">
-        <div class="container-fluid"><a class="navbar-brand" style="color:rgba(255,255,255,0.9);font-size:28px;">Algorithms</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div
-                class="collapse navbar-collapse" id="navcol-1">
+    <nav class="navbar navbar-light navbar-expand-sm" style="background: linear-gradient(90deg, #021B79, #00c6ff); height: 40px;">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="color:rgba(255,255,255,1);font-size:28px;">Algorithms</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item" role="presentation"><a class="nav-link" id="btPageRep" onclick="clickPageReplacement()">Page Replacement</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" id="btFileAlloc" onclick="clickFileAllocation()">File Allocation</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" id="btDiskScd" onclick="clickDiskScheduling()" >Disk Scheduling</a></li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="btPageRep" onclick="clickPageReplacement()">Page Replacement</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="btFileAlloc" onclick="clickFileAllocation()">File Allocation</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="btDiskScd" onclick="clickDiskScheduling()">Disk Scheduling</a>
+                    </li>
                 </ul>
-        </div>
+            </div>
         </div>
     </nav>
-    <nav class="navbar navbar-light navbar-expand-md" style="background: #fed330;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-2">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navcol-2">
-                    <div id ="subMenuDiv">
-                        <!--
+    <nav class="navbar navbar-light navbar-expand-sm" style="background: #fed330; height: 48px;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-2">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <div id="subMenuDiv">
+                    <!--
                          <ul class="nav navbar-nav" id ="subMenu" >
                         <li class="nav-item" role="presentation">
                             <a class="nav-link buttonMenuClick ">First Item</a>
@@ -46,28 +55,51 @@
                         </li>
                     </ul>
                 -->
-                    </div>
-                   
                 </div>
+
             </div>
-        </nav>
-    
+        </div>
+    </nav>
+
     <div>
         <ul class="nav nav-tabs">
-            <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab">Configuration</a></li>
-            <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab">Simulation</a></li>
-            
+            <li class="nav-item">
+                <a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1">Configuration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">Simulation</a>
+            </li>
+
         </ul>
         <div class="tab-content">
-            <div class="tab-pane active" role="tabpanel" id="tab-1"></div>
-            <div class="tab-pane" role="tabpanel" id="tab-2"></div>
-           
+            <div class="tab-pane active" role="tabpanel" id="tab-1">
+                <div id="config-tab">
+
+                </div>
+             </div>
+            <div class="tab-pane" role="tabpanel" id="tab-2">
+                <div id="simulation-tab">
+
+                </div>
+            </div>
+
         </div>
     </div>
 
+
+
+    <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+
+    <!-- normal script imports etc  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
     <script src="mainMenu.js"></script>
     <script src="PageReplacement.js"></script>
     <script src="DiskScheduling.js"></script>
-    
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Insert this line after script imports -->
+    <script>if (window.module) module = window.module;</script>
+
 
 </html>

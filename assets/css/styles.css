@@ -1,6 +1,6 @@
 .buttonMenuClick{
 
-    background-color: white;
+    background-color: #fed330;
     transition: 0.5s ease;
 }
 
@@ -9,6 +9,13 @@
     background-color: #00000000;
     transition: 0.5s ease;
 }
+
+.buttonSubMenuClick{
+
+    background-color: white;
+    transition: 0.5s ease;
+}
+
 
 .activeTab{
     background: #0072ff;

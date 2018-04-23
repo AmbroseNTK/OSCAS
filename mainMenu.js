@@ -1,5 +1,4 @@
 
-let $ = require('jquery');
 
 function clickPageReplacement() {
 
@@ -7,8 +6,10 @@ function clickPageReplacement() {
     $("#btFileAlloc").removeClass("buttonMenuClick").addClass("buttonMenuLeave");
     $("#btDiskScd").removeClass("buttonMenuClick").addClass("buttonMenuLeave");
     clearSubMenu();
-    var listItem = [{ name: "FIFO" }, { name: "LRU"} ,{name:"SCLOCK"}];
+    var listItem = [{ name: "FIFO" }, { name: "LRU"} ,{name:"SCLOCK"},{name:"OPTIMAL"}];
     createSubMenu(listItem,"PageReplacement.js");
+    
+    $("#config-tab").load("PageReplacement_Config.html");
 
 }
 

@@ -1,19 +1,29 @@
 
 function clickFIFO(){
    
-    $("#btFIFO").addClass("buttonMenuClick").removeClass("buttonMenuLeave");
-    $("#btLRU").removeClass("buttonMenuClick").addClass("buttonMenuLeave");
-    $("#btSCLOCK").removeClass("buttonMenuClick").addClass("buttonMenuLeave");
+    $("#btFIFO").addClass("buttonSubMenuClick").removeClass("buttonMenuLeave");
+    $("#btLRU").removeClass("buttonSubMenuClick").addClass("buttonMenuLeave");
+    $("#btSCLOCK").removeClass("buttonSubMenuClick").addClass("buttonMenuLeave");
+    $("#btOPTIMAL").removeClass("buttonSubMenuClick").addClass("buttonMenuLeave");
 }
 
 function clickLRU(){
-    $("#btLRU").addClass("buttonMenuClick").removeClass("buttonMenuLeave");
-    $("#btFIFO").removeClass("buttonMenuClick").addClass("buttonMenuLeave");
-    $("#btSCLOCK").removeClass("buttonMenuClick").addClass("buttonMenuLeave");
+    $("#btLRU").addClass("buttonSubMenuClick").removeClass("buttonMenuLeave");
+    $("#btFIFO").removeClass("buttonSubMenuClick").addClass("buttonMenuLeave");
+    $("#btSCLOCK").removeClass("buttonSubMenuClick").addClass("buttonMenuLeave");
+    $("#btOPTIMAL").removeClass("buttonSubMenuClick").addClass("buttonMenuLeave");
 }
 
 function clickSCLOCK(){
-    $("#btSCLOCK").addClass("buttonMenuClick").removeClass("buttonMenuLeave");
-    $("#btLRU").removeClass("buttonMenuClick").addClass("buttonMenuLeave");
-    $("#btFIFO").removeClass("buttonMenuClick").addClass("buttonMenuLeave");
+    $("#btSCLOCK").addClass("buttonSubMenuClick").removeClass("buttonMenuLeave");
+    $("#btLRU").removeClass("buttonSubMenuClick").addClass("buttonMenuLeave");
+    $("#btFIFO").removeClass("buttonSubMenuClick").addClass("buttonMenuLeave");
+    $("#btOPTIMAL").removeClass("buttonSubMenuClick").addClass("buttonMenuLeave");
+}
+
+function clickOPTIMAL(){
+    $("#btOPTIMAL").addClass("buttonSubMenuClick").removeClass("buttonMenuLeave");
+    $("#btLRU").removeClass("buttonSubMenuClick").addClass("buttonMenuLeave");
+    $("#btFIFO").removeClass("buttonSubMenuClick").addClass("buttonMenuLeave");
+    $("#btSCLOCK").removeClass("buttonSubMenuClick").addClass("buttonMenuLeave");
 }
