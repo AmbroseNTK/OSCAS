@@ -1,0 +1,17 @@
+{
+  "name": "oscas",
+  "version": "1.0.0",
+  "description": "Operating System Concepts Algorithm Simulator",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "Ambrose Nguyen Tuan Kiet",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "electron": "^1.8.4",
+    "jquery": "^3.3.1"
+  }
+}

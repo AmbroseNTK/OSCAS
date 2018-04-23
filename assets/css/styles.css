@@ -1,0 +1,26 @@
+.buttonMenuClick{
+
+    background-color: white;
+    transition: 0.5s ease;
+}
+
+.buttonMenuLeave{
+
+    background-color: #00000000;
+    transition: 0.5s ease;
+}
+
+.activeTab{
+    background: #0072ff;
+}
+
+:not(input):not(textarea),
+:not(input):not(textarea)::after,
+:not(input):not(textarea)::before {
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+input, button, textarea, :focus {
+    outline: none;
+}
