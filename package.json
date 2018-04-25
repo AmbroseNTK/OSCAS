@@ -10,6 +10,7 @@
   "author": "Ambrose Nguyen Tuan Kiet",
   "license": "ISC",
   "dependencies": {
+    "animejs": "^2.2.0",
     "bootstrap": "^4.1.0",
     "electron": "^1.8.4",
     "jquery": "^3.3.1"
