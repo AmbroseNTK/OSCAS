@@ -67,7 +67,7 @@
                 <a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1">Configuration</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">Simulation</a>
+                <a class="nav-link" role="tab" data-toggle="tab" href="#tab-2" id="tabSimulation">Simulation</a>
             </li>
 
         </ul>
@@ -76,8 +76,34 @@
                 <div id="config-tab">
 
                 </div>
-             </div>
+            </div>
             <div class="tab-pane" role="tabpanel" id="tab-2">
+                <nav id="barRun" class="navbar navbar-light navbar-expand-sm" style="background: #18c43d; height: 48px;">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-2">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navcol-2">
+                            <div id="menuRun">
+                                <ul class="nav navbar-nav">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="btn btn-primary btn-sm" style="background: rgb(25, 196, 25)">Run</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="btn btn-primary btn-sm" style="margin-left: 10%; background:orangered">Step by step</button>
+                                    </li>
+                                  
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </nav>
+                <div id="debugInfo" style="margin-left: 20px; color: cornflowerblue; font-size: 15pt; font-weight:bold">
+                        Debug Info: Lorem Ipsum Donor
+                    </div>
                 <div id="simulation-tab">
 
                 </div>

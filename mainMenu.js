@@ -1,4 +1,4 @@
-
+const anime = require('animejs');
 
 function clickPageReplacement() {
 
@@ -49,3 +49,12 @@ function createSubMenu(listItem, algorithmFile) {
         }
     }
 }
+
+$('#tabSimulation').on('click',()=>{
+
+    anime({
+        targets:'#barRun',
+        translateX:[{value:"-100%",duration:0},{value:"0%",duration:1000}],
+        autoplay:false
+    }).restart();
+});
