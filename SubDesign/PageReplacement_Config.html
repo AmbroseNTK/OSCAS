@@ -12,20 +12,22 @@
 </head>
 
 <body>
-    <form style="margin-left:20px;margin-top:10px;"><input class="form-control" type="number" required="" placeholder="Number of Page"><input class="form-control" type="text" placeholder="Enter page references string with delimiter ','" style="margin-top:10px;"></form>
+    <form style="margin-left:20px;margin-top:10px;"><input class="form-control" type="number" required="" placeholder="Number of Page (Maximum = 4)"><input class="form-control" type="text" placeholder="Enter page references string with delimiter ',' (Maximum 29 different references)" style="margin-top:10px;"></form>
     <div style="margin-top:10px;">
         <div class="container">
             <div class="row">
-                <div class="col-md-3"><button class="btn btn-primary btn-lg" type="button" data-bs-hover-animate="jello" style="background-color:#e28c05;">Save</button></div>
-                <div class="col-md-3"><button class="btn btn-primary btn-lg" type="button" data-bs-hover-animate="jello" style="background-color:#fca311;">Load</button></div>
-                <div class="col-md-3"><button class="btn btn-primary btn-lg" type="button" data-bs-hover-animate="jello">Apply</button></div>
-                <div class="col-md-3"><button class="btn btn-primary btn-lg" type="button" data-bs-hover-animate="jello" style="background-color:#1eb53a;">Simulator</button></div>
+                <div id="btSave" class="col-md-3"><button class="btn btn-primary btn-lg" type="button" data-bs-hover-animate="jello" style="background-color:#e28c05;">Save</button></div>
+                <div id="btLoad" class="col-md-3"><button class="btn btn-primary btn-lg" type="button" data-bs-hover-animate="jello" style="background-color:#fca311;">Load</button></div>
+                <div id="btApply" class="col-md-3"><button class="btn btn-primary btn-lg" type="button" data-bs-hover-animate="jello">Apply</button></div>
+                <div id="btSimulate" class="col-md-3"><button class="btn btn-primary btn-lg" type="button" data-bs-hover-animate="jello" style="background-color:#1eb53a;">Simulator</button></div>
             </div>
         </div>
     </div>
+    
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-animation.js"></script>
+   
 </body>
 
 </html>

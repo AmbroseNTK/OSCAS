@@ -10,6 +10,7 @@ function clickPageReplacement() {
     createSubMenu(listItem,"PageReplacement.js");
     
     $("#config-tab").load("PageReplacement_Config.html");
+    
 
 }
 
