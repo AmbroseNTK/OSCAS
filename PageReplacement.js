@@ -1,5 +1,8 @@
 
 var algorithm = 'pr_fifo';
+var PR_SimSet =[];
+var PR_numOfRefs = 0;
+var PR_diffRef = [];
 
 function clickFIFO() {
 
@@ -59,6 +62,7 @@ function checkParamsPageReplacement(numOfRefs, listOfRefs) {
         if (diffRef.length < 30)
             result = 0;
     }
+    PR_diffRef = diffRef;
     return result;
 }
 
@@ -92,5 +96,7 @@ function calcFIFO(numOfRefs, listOfRefs) {
         }
         replacement = '';
     }
+    PR_numOfRefs = numOfRefs;
+    PR_SimSet = result;
     return result;
 }

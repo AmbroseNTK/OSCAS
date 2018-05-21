@@ -51,10 +51,9 @@
             console.log(dialog.showMessageBox({title:'Error Message',message:mess}));
 
             if(result == 0){
-                if(algorithm == 0){
-                    //simulateResult = calcFIFO($('#tbNumOfRefs').val(),$('#tbListRefs').val());
-                    
-                  
+                if(algorithm == 'pr_fifo'){
+                  calcFIFO($('#tbNumOfRefs').val(),$('#tbListRefs').val());
+                
                 }
             }
             

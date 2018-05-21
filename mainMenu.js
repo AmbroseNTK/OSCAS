@@ -1,5 +1,8 @@
 const anime = require('animejs');
 
+const screenWidth = 700;
+const screenHeight = 500;
+
 function clickPageReplacement() {
 
     $("#btPageRep").addClass("buttonMenuClick").removeClass("buttonMenuLeave");
